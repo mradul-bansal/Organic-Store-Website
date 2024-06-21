@@ -1,0 +1,372 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Image Carousel */
+.image-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 33.33%; /* Each image takes one-third of the container */
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-images img {
+        width: 100%; /* Each image takes the full width of the container */
+    }
+}
+
+/* Brand Strip */
+.brand-strip {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.brand-marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.brand-marquee span {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+.brand-marquee a {
+    display: inline-block;
+    padding: 0 20px; /* Adjust the value as needed */
+    font-size: 18px;
+}
+
+.brand-marquee a:hover {
+    color: #357ab8;
+}
+
+.brand-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #3a7ae0;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Reviews Carousel */
+.reviews-carousel {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.reviews {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+    background: #eef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 33.33%;
+    margin: 0 10px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card.middle {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h3 {
+    font-size: 20px;
+    color: #000;
+}
+
+.review-card i {
+    color: orange;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 100%; /* Each review takes the full width of the container */
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 20px;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.categories h1 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    cursor: pointer;
+    text-align: center;
+}
+
+.img-container {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category:hover .overlay {
+    opacity: 1;
+}
+
+.button {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.category p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .category {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 100%;
+    }
+}

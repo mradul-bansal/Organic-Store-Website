@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-us h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #000;
+    font-weight: 700;
+}
+
+.contact-us hr {
+    width: 80%;
+    margin: 0 auto 40px;
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: #e0e7ff;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card i {
+    font-size: 32px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.contact-card h2 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive Design for Contact Info */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 90%; /* Adjust width to fit smaller screens */
+        max-width: 100%; /* Ensure the card doesn't exceed the screen width */
+        padding: 20px; /* Reduce padding to make the card more compact */
+        margin-bottom: 20px; /* Add some bottom margin between cards */
+    }
+
+    .contact-card i {
+        font-size: 28px; /* Decrease icon size */
+    }
+
+    .contact-card h2 {
+        font-size: 20px; /* Decrease heading size */
+    }
+
+    .contact-card p {
+        font-size: 16px; /* Decrease paragraph size */
+    }
+}
+
+
+.contact-info a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+
+
+
+
+/* Map Section */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 300px; /* Adjusted height */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjusted height */
+}
+
+
