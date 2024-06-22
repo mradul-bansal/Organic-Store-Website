@@ -1,24 +1,15 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* Contact Us Section */
 .contact-us {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #3a5a40; /* Dark green background */
 }
 
 .contact-us h1 {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 48px;
-    color: #000;
+    color: #dad7cd; /* Light gray text color */
     font-weight: 700;
 }
 
@@ -26,7 +17,7 @@ body {
     width: 80%;
     margin: 0 auto 40px;
     border: none;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #a3b18a; /* Light green border */
 }
 
 /* Contact Info Section */
@@ -35,10 +26,11 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .contact-card {
-    background-color: #e0e7ff;
+    background-color: #dad7cd; /* Light gray background */
     padding: 30px;
     border-radius: 10px;
     flex: 1;
@@ -46,7 +38,7 @@ body {
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-card:hover {
@@ -55,28 +47,34 @@ body {
 
 .contact-card i {
     font-size: 32px;
-    color: #4a90e2;
+    color: orange; /* Adjusted icon color to match the rating and reviews section */
     margin-bottom: 10px;
 }
 
 .contact-card h2 {
     margin: 15px 0;
     font-size: 24px;
-    color: #333;
+    color: #344e41; /* Dark text color */
 }
 
 .contact-card p {
     font-size: 18px;
-    color: #555;
+    color: #344e41; /* Dark text color */
+}
+
+.contact-card a {
+    color: #344e41; /* Adjusted link color to match the dark text color in reviews */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #207ab4; /* Darker blue color on hover */
+    text-decoration: underline;
 }
 
 /* Responsive Design for Contact Info */
 @media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .contact-card {
         width: 90%; /* Adjust width to fit smaller screens */
         max-width: 100%; /* Ensure the card doesn't exceed the screen width */
@@ -97,21 +95,6 @@ body {
     }
 }
 
-
-.contact-info a {
-    color: inherit; /* Inherit the color from the parent element */
-    text-decoration: none; /* Remove the underline */
-}
-
-.contact-info a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
-
-
-
-
-
-
 /* Map Section */
 .map-container {
     position: relative;
@@ -129,5 +112,3 @@ body {
     width: 100%;
     height: 100%; /* Adjusted height */
 }
-
-

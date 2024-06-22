@@ -8,11 +8,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #dad7cd; /* Light background color */
+    color: #344e41; /* Dark text color */
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #588157; /* Link color */
 }
 
 ul {
@@ -24,7 +26,7 @@ ul {
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    margin-bottom: 20px; /* Added margin for spacing */
+    margin-bottom: 20px;
 }
 
 .carousel {
@@ -39,7 +41,7 @@ ul {
 }
 
 .carousel-images img {
-    width: 33.33%; /* Each image takes one-third of the container */
+    width: 33.33%;
     object-fit: cover;
 }
 
@@ -66,7 +68,7 @@ ul {
 
 @media (max-width: 768px) {
     .carousel-images img {
-        width: 100%; /* Each image takes the full width of the container */
+        width: 100%;
     }
 }
 
@@ -92,8 +94,9 @@ ul {
 
 .brand-marquee a {
     display: inline-block;
-    padding: 0 20px; /* Adjust the value as needed */
+    padding: 0 20px;
     font-size: 18px;
+    color: #588157; /* Link color */
 }
 
 .brand-marquee a:hover {
@@ -117,8 +120,8 @@ ul {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 5px 2px;
+    color: #344e41; /* Dark text color */
 }
 
 .hero h1 {
@@ -133,147 +136,6 @@ ul {
     margin: 10px 0 0;
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.section-title {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.main-title {
-    font-size: 36px;
-    color: #000;
-    margin-bottom: 40px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card i {
-    font-size: 40px;
-    color: #3a7ae0;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-size: 22px;
-    color: #000;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 16px;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
-/* Reviews Carousel */
-.reviews-carousel {
-    position: relative;
-    text-align: center;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.reviews {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.review-card {
-    background: #eef;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 33.33%;
-    margin: 0 10px;
-    flex-shrink: 0;
-    text-align: center;
-    transition: transform 0.5s ease-in-out;
-}
-
-.review-card.middle {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.review-card h3 {
-    font-size: 20px;
-    color: #000;
-}
-
-.review-card i {
-    color: orange;
-}
-
-.review-card p {
-    font-size: 16px;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .review-card {
-        width: 100%; /* Each review takes the full width of the container */
-    }
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
 
 /* Categories Section */
 .categories {
@@ -346,8 +208,8 @@ ul {
 }
 
 .button {
-    background: #fff;
-    color: #333;
+    background: #a3b18a; /* Button background color */
+    color: #344e41; /* Button text color */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -370,3 +232,117 @@ ul {
         width: 100%;
     }
 }
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #a3b18a; /* Light green background */
+    color: #344e41; /* Dark text color */
+}
+
+.section-title {
+    font-size: 20px;
+    color: #588157; /* Medium green color */
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 36px;
+    color: #344e41; /* Dark text color */
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #dad7cd; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #3a5a40; /* Dark green color */
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #344e41; /* Dark text color */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #344e41; /* Dark text color */
+}
+
+/* Reviews Carousel */
+.reviews-carousel {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #a3b18a; /* Light green background */
+    padding: 40px 0;
+}
+
+.reviews {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+    background: #dad7cd; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 33.33%;
+    margin: 0 10px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card.middle {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h3 {
+    font-size: 20px;
+    color: #344e41; /* Dark text color */
+}
+
+.review-card i {
+    color: orange;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #344e41; /* Dark text color */
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 100%;
+    }
+}
+
+/* Adjustments for Categories and Footer sections remain the same as previously provided */
+
