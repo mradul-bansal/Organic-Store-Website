@@ -1,3 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #344e41; /* Dark olive green text color */
+}
+
 /* Contact Us Section */
 .contact-us {
     text-align: center;
