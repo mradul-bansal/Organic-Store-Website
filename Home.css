@@ -86,21 +86,16 @@ ul {
     animation: scroll 20s linear infinite;
 }
 
-.brand-marquee span {
+.brand-marquee p {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 30px; /* Adjust padding as needed for spacing */
     font-size: 18px;
+    margin: 0; /* Ensure no additional margin is added */
+    color: #588157; /* Text color */
 }
 
-.brand-marquee a {
-    display: inline-block;
-    padding: 0 20px;
-    font-size: 18px;
-    color: #588157; /* Link color */
-}
-
-.brand-marquee a:hover {
-    color: #357ab8;
+.brand-marquee p:hover {
+    color: #357ab8; /* Hover color */
 }
 
 .brand-marquee:hover {
@@ -111,7 +106,6 @@ ul {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }
