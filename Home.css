@@ -95,7 +95,7 @@ ul {
 }
 
 .brand-marquee p:hover {
-    color: #357ab8; /* Hover color */
+    color: #000; /* Hover color */
 }
 
 .brand-marquee:hover {
@@ -226,6 +226,7 @@ ul {
         width: 100%;
     }
 }
+
 
 
 /* Why Choose Us Section */

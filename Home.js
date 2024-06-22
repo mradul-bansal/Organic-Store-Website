@@ -1,15 +1,15 @@
 // Image Carousel
 let scrollPosition = 0;
 
-function scrollCarousel(direction) {
+function scrollCarousel(direction = 1) {
     const carousel = document.querySelector('.carousel-images');
     const carouselWidth = carousel.scrollWidth / carousel.childElementCount;
 
     scrollPosition += direction * carouselWidth;
 
     if (scrollPosition < 0) {
-        scrollPosition = (carousel.childElementCount - 3) * carouselWidth;
-    } else if (scrollPosition >= carousel.scrollWidth - (carouselWidth * 3)) {
+        scrollPosition = (carousel.childElementCount - 1) * carouselWidth;
+    } else if (scrollPosition >= carousel.scrollWidth) {
         scrollPosition = 0;
     }
 
@@ -22,7 +22,7 @@ function cloneMarquee() {
     marquee.parentNode.appendChild(clone);
 }
 
-window.onload = cloneMarquee;
+
 
 
 // Review Carousel
