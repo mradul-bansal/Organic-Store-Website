@@ -1,0 +1,24 @@
+# Allow all user agents full access to the site
+User-agent: *
+Allow: /
+
+# Block access to all .css and .js files to save bandwidth and reduce server load
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Block access to sensitive or unnecessary directories
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Allow access to specific important pages
+Allow: /index.html
+Allow: /All%20Products.html
+Allow: /Contact%20Us.html
+Allow: /About%20Us.html
+Allow: /Seeds.html
+Allow: /Leaves.html
+Allow: /Organic%20Root.html
+
+# Specify the location of the sitemap
+Sitemap: https://www.manishenterprises.com/sitemap.xml
