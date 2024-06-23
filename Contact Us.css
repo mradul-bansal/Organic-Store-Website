@@ -1,9 +1,11 @@
+/* Basic Style */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Light gray background */
     color: #344e41; /* Dark olive green text color */
+    line-height: 1.6;
 }
 
 /* Contact Us Section */
@@ -119,4 +121,41 @@ body {
     left: 0;
     width: 100%;
     height: 100%; /* Adjusted height */
+}
+
+/* Accessibility and SEO Enhancements */
+body, h1, h2, p, a {
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus, a:hover {
+    color: #207ab4;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    .contact-card h2 {
+        font-size: 18px;
+    }
+
+    .contact-card p {
+        font-size: 14px;
+    }
 }

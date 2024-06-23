@@ -22,12 +22,8 @@ function cloneMarquee() {
     marquee.parentNode.appendChild(clone);
 }
 
-
-
-
 // Review Carousel
-
-let reviewIndex = 0;
+let reviewIndex = -1;
 const reviewInterval = 3000; // 3 seconds interval
 
 function updateReviewClasses() {
@@ -41,11 +37,11 @@ function updateReviewClasses() {
 }
 
 function scrollReviews() {
-    const reviews = document.querySelector('.reviews');
-    const reviewWidth = reviews.querySelector('.review-card').offsetWidth + 20; // 20px margin
+    const reviewsContainer = document.querySelector('.reviews');
+    const reviewWidth = reviewsContainer.querySelector('.review-card').offsetWidth + 20; // 20px margin
 
-    reviewIndex = (reviewIndex + 1) % reviews.childElementCount;
-    reviews.style.transform = `translateX(-${reviewWidth * reviewIndex}px)`;
+    reviewIndex = (reviewIndex + 1) % reviewsContainer.childElementCount;
+    reviewsContainer.style.transform = `translateX(-${reviewWidth * reviewIndex}px)`;
 
     updateReviewClasses();
 }
@@ -54,27 +50,26 @@ function startAutoScroll() {
     setInterval(scrollReviews, reviewInterval);
 }
 
-// Start the auto-scroll when the page loads
-window.onload = () => {
+// Initialize functions after DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
     updateReviewClasses();
     startAutoScroll();
-};
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        var whatsappMessage = document.getElementById('whatsapp-message');
+    // Display WhatsApp message after 5 seconds
+    setTimeout(() => {
+        const whatsappMessage = document.getElementById('whatsapp-message');
         if (whatsappMessage) {
-            whatsappMessage.style.display = 'block';
+            whatsappMessage.classList.add('show'); // Use a CSS class for showing the message
         }
     }, 5000); // 5 seconds delay
 
-    var closeBtn = document.getElementById('close-btn');
+    // Close button functionality
+    const closeBtn = document.getElementById('close-btn');
     if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
-            var whatsappMessage = document.getElementById('whatsapp-message');
+        closeBtn.addEventListener('click', () => {
+            const whatsappMessage = document.getElementById('whatsapp-message');
             if (whatsappMessage) {
-                whatsappMessage.style.display = 'none';
+                whatsappMessage.classList.remove('show'); // Use a CSS class for hiding the message
             }
         });
     }
