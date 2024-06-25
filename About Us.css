@@ -8,8 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #dad7cd; /* Light gray background */
+    color: #344e41; /* Dark text color */
 }
-
 
 /* Contact Info Section */
 .contact-info a {
@@ -21,10 +22,10 @@ body {
     text-decoration: underline; /* Optional: Add underline on hover */
 }
 
-
 /* About Us page specific styles */
 .about-us {
     padding: 20px;
+    background-color: #f0f0f0; /* Light background for contrast */
 }
 
 .about-content {
@@ -35,8 +36,101 @@ body {
 .about-content h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #3a5a40; /* Dark green text */
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #588157; /* Medium green text */
 }
 
 .about-content p {
     margin-bottom: 15px;
+    color: #344e41; /* Dark text */
+}
+
+/* Pre-header styling */
+.pre-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a5a40; /* Dark green background */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.pre-header .gst-number {
+    color: #dad7cd; /* Light gray text color */
+}
+
+.pre-header .contact-info {
+    display: flex;
+    gap: 10px;
+}
+
+.pre-header .contact-info span {
+    display: flex;
+    align-items: center;
+    color: #dad7cd; /* Light gray text color */
+}
+
+.pre-header a {
+    color: #dad7cd; /* Light gray text color */
+    text-decoration: none;
+}
+
+.pre-header a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile pre-header styling */
+@media (max-width: 768px) {
+    .pre-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pre-header .contact-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Brand Strip */
+.brand-strip {
+    background-color: #f0f0f0; /* Light background */
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.brand-marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.brand-marquee p {
+    display: inline-block;
+    padding: 0 30px; /* Adjust padding as needed for spacing */
+    font-size: 18px;
+    color: #588157; /* Medium green text */
+}
+
+.brand-marquee p:hover {
+    color: #3a5a40; /* Dark green text */
+}
+
+.brand-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
