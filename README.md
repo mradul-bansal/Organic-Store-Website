@@ -35,6 +35,7 @@ Organic Store/
 │   ├── Organic Root.html
 │   ├── Seeds.html
 ├── README.md
+```
 
 
 ### HTML Files
