@@ -14,24 +14,26 @@ This project is a website for an organic store, featuring a variety of organic p
 **Live Website**: [manishenterprisesneemuch.me](http://manishenterprisesneemuch.me)
 
 ## File Structure
+
+```plaintext
 Organic Store/
 ├── css/
-│ ├── About Us.css
-│ ├── Contact Us.css
-│ ├── Header-Footer-WA.css
-│ ├── Home.css
-│ ├── Product Page.css
+│   ├── About Us.css
+│   ├── Contact Us.css
+│   ├── Header-Footer-WA.css
+│   ├── Home.css
+│   ├── Product Page.css
 ├── js/
-│ ├── Home.js
-│ ├── WA.js
+│   ├── Home.js
+│   ├── WA.js
 ├── html/
-│ ├── About Us.html
-│ ├── All Products.html
-│ ├── Contact Us.html
-│ ├── index.html
-│ ├── Leaves.html
-│ ├── Organic Root.html
-│ ├── Seeds.html
+│   ├── About Us.html
+│   ├── All Products.html
+│   ├── Contact Us.html
+│   ├── index.html
+│   ├── Leaves.html
+│   ├── Organic Root.html
+│   ├── Seeds.html
 ├── README.md
 
 
