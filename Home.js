@@ -1,3 +1,5 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 // Image Carousel
 let scrollPosition = 0;
 
