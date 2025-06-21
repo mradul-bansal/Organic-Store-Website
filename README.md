@@ -11,7 +11,7 @@
 ## Project Overview
 This project is a website for an organic store, featuring a variety of organic products such as leaves, seeds, and roots. The website consists of multiple HTML pages styled with CSS and enhanced with JavaScript functionalities.
 
-**Direct link**: [manishenterprisesneemuch](manish-enterprises.vercel.app)
+**Direct link**: [manishenterprisesneemuch](https://manish-enterprises.vercel.app)
 
 ## File Structure
 
